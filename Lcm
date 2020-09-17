@@ -1,0 +1,25 @@
+
+#include <stdio.h> 
+int main() 
+{ 
+int a, b, large; 
+printf("Enter two positive integers: "); 
+scanf("%d %d", &a, &b);
+large = (a > b) ? a : b; 
+while (1) 
+{ 
+if (large % a == 0 && large % b == 0) 
+{ 
+printf("The LCM is %d.", large); 
+break; 
+} 
+++large; 
+} 
+return 0; 
+}
+
+
+
+
+
+    
